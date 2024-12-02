@@ -1,7 +1,7 @@
 ---
-title: Title
-subtitle: Subtitle
-date: last-modified
+title: Euro-CSDMS Workshop
+subtitle: Summary, Highlights and Takeaways
+date: 2024-12-11
 date-format: long
 
 format:
@@ -25,23 +25,125 @@ affiliations:
 
 authors:
   - name: Joe Marsh Rossney
-    affiliation:
-      - ref: ukceh
     email: joemar@ceh.ac.uk
     url: https://github.com/jmarshrossney
-    orcid: 0000-0002-8082-8566
+    affiliations: 
+      - ref: ukceh
+  - name: Mike Holloway
+    email: mhollaway@ceh.ac.uk
+  - name: Carolynne Lord
+    email: carlor@ceh.ac.uk
+
 
 bibliography: references.bib
 ---
 
-## First slide
+# Context
 
-To learn more about Quarto presentations using Revealjs visit <https://quarto.org/docs/presentations/revealjs/>.
+## The Workshop {.smaller}
+
+Took place October 28th-31st at Rydal Hall in the Lake District.
+
+Aimed to answer the question: _what should the next generation of environmental models look like?_
+
+::::{.columns}
+
+:::{.column width="50%"}
+#### Large UKCEH presence!
+
+- **Sam Harrison** (lead organiser)
+- Gordon Blair (speaker)
+- Carolynne Lord (speaker)
+- Mike Holloway (speaker)
+- Cansu Uluseker
+- Ed Rowe
+- Joe Marsh Rossney
+:::
+:::{.column width="50%"}
+#### And others
+
+- RSEs: Cambridge, Potsdam, Chile
+- Senior academics: Amsterdam, Plymouth, TUDelft
+- Postdocs / PhD students: Lancaster, Plymouth, Rome, York
+- Industry: Bristol
+ 
+:::
+
+::::
+
+## {background-image="images/rydal_hall_2024.jpg"}
 
 
-## Thanks for listening! { .no-logo .no-footer .closing-slide .center background-image="images/PP_wave-02.png"}
+## What's a CSDMS?
+
+- _"a diverse community of experts promoting the modeling of earth surface processes by developing, supporting, and disseminating integrated software modules..."_^[https://csdms.colorado.edu/wiki/About_CSDMS]
+
+- Based out of Colorado: https://csdms.colorado.edu/
+- Maintain a curated [repository of compliant community models](https://csdms.colorado.edu/wiki/Model_download_portal)
+
+:::{.callout-note}
+### CSDMS = Community Surface Dynamics Modelling System
+:::
+
+
+## The CSDMS Workbench
+
+The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is designed to facilitate ... by
+
+1. Interoperability of models via the [Basic Model Interface](https://csdms.colorado.edu/wiki/BMI) (BMI)
+2. [Variable naming standards](https://csdms.colorado.edu/wiki/CSDMS_Standard_Names)
+3. Language agnosticism via a [Python wrapper](https://github.com/csdms/babelizer) (Fortran, C, C++, ~Java, ~Julia)
+4. Various tools for coupling model components exposing a BMI, setting up gridded experiments, and incorporating data
+
+:::{.notes}
+- Aim: build models from interoperable components
+- Essence: wrap model code in (mostly) non domain-specific abstractions - making relatively few assumptions
+- This is the BMI
+- Concretely, in Python BMI is an ABC whose methods you should implement such that they execute appropriate parts of your model
+- The Babelizer basically uses Cookiecutter and jinja2 templating to generate a Python package (complete with `pyproject.toml`) that contains this class (lots of `cdef` and `cpdef` involved)
+- Result: reasonably flexible, extensible modelling and analysis framework
+:::
+
+## Extensions and Alternatives
+
+- [eWatercycle](https://www.ewatercycle.org/) - [Netherlands eScience Centre](https://www.esciencecenter.nl/) (uses BMI)
+  - We ran [this demo notebook](https://www.ewatercycle.org/eurocsdms_workshop/main/intro.html) on Datalabs
+- The Framework for Aquatic Biogeochemical Models (FABM) - PML
+- NextGen: next generation [National Water Model](https://water.noaa.gov/about/nwm) - NOAA (uses BMI)
+
+
+# Joe's Highlights / Takeaways
+
+## A toybox of models
+
+## Containerised, BMI-ified JULES
+
+# Mike's Highlights
+
+
+# Carolynnes Highlights
+
+
+# Next steps
+
+## Next steps
+
+- Set up _Euro_-CSDMS
+- Writing a kind of proceedings / workshop outcomes paper
+- Set up a community forum on Discourse (done! https://forum.csdms.io/)
+- Looking for funding for future events
+- Developing training tools (toybox)
+- _In situ_ hackathons + citizen science projects (solve the system)
+
+# Thanks for listening! { .no-logo .no-footer .closing-slide .center background-image="images/PP_wave-02.png"}
 
 **Any questions?**
 
+:::{.callout-important}
+### Join the Discourse forum!
+https://forum.csdms.io/
+:::
 
-## References
+## More information...
+
+- Sam's blog post: https://www.ceh.ac.uk/news-and-media/blogs/envisioning-future-environmental-modelling
