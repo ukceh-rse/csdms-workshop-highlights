@@ -29,7 +29,7 @@ authors:
     url: https://github.com/jmarshrossney
     affiliations: 
       - ref: ukceh
-  - name: Mike Holloway
+  - name: Mike Hollaway
     email: mhollaway@ceh.ac.uk
   - name: Carolynne Lord
     email: carlor@ceh.ac.uk
@@ -118,8 +118,24 @@ The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is designed to 
 
 ## Containerised, BMI-ified JULES
 
-# Mike's Highlights
+# Mike's Highlights / Takeaways
 
+## Modular modelling systems
+
+- Moving towards a system of modular models rather than large complex codebases
+- Enables easier coupling of models
+- Allows adaptation to ever changing environmental challenges: Easily swap one model for another depending on challenge at hand
+
+## Ethical and sustainability of models
+
+- How sustainable are our models? - we need to balance the good the models can produce with the carbon impact of running them
+- Ethical considerations - Have we considered the societal impact of our models (E.g. informing policy)? Have we involved the communities impacted in the development of models?
+- Ethical considerations - Modellers often want to help after a natural disaster (E.g. flooding) but could this be perceived as help or trying to advance careers on back of disaster?
+
+## Getting modellers out of their silos
+
+- Picking on hydrologists here but why so many different models? Should there be more community collaboration?
+- Linking models requires making them easier to couple with other models - E.g. using the CSDMS BMI approach 
 
 # Carolynnes Highlights
 
