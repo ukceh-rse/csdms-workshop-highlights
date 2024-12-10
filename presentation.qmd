@@ -1,5 +1,5 @@
 ---
-title: Euro-CSDMS Workshop
+title: Euro-CSDMS Workshop on Next-generation Modelling
 subtitle: Summary, Highlights and Takeaways
 date: 2024-12-11
 date-format: long
@@ -8,43 +8,29 @@ format:
   revealjs:
     theme: [default, ukceh.scss]
     logo: images/logo.png
-    footer: Slides published at <a href="https://ukceh-rse.github.io/quarto-revealjs-template">ukceh-rse.github.io/quarto-revealjs-template</a>
+    footer: <a href="https://www.ceh.ac.uk">www.ceh.ac.uk</a>
+    smaller: true
     slide-number: c/t
     show-slide-number: all
     progress: true
     embed-resources: true
     title-slide-attributes:
-      data-background-image: images/PP_wave-01.png
+      data-background-image: images/title.png
     header-includes: |
       <script src="ukceh.js" type="application/javascript"></script>
 
-affiliations:
-  - id: ukceh
-    name: UK Centre for Ecology & Hydrology
-    url: https://ceh.ac.uk
-
 authors:
-  - name: Joe Marsh Rossney
-    email: joemar@ceh.ac.uk
-    url: https://github.com/jmarshrossney
-    affiliations: 
-      - ref: ukceh
-  - name: Mike Hollaway
-    email: mhollaway@ceh.ac.uk
-  - name: Carolynne Lord
-    email: carlor@ceh.ac.uk
+  - Joe Marsh Rossney
+  - Mike Hollaway
+  - Carolynne Lord
 
-
-bibliography: references.bib
 ---
 
 # Context
 
-## The Workshop {.smaller}
+## The Workshop
 
 Took place October 28th-31st at Rydal Hall in the Lake District.
-
-Aimed to answer the question: _what should the next generation of environmental models look like?_
 
 ::::{.columns}
 
@@ -52,48 +38,53 @@ Aimed to answer the question: _what should the next generation of environmental 
 #### Large UKCEH presence!
 
 - **Sam Harrison** (lead organiser)
-- Gordon Blair (speaker)
-- Carolynne Lord (speaker)
-- Mike Holloway (speaker)
+- _Gordon Blair_ (speaker)
+- _Carolynne Lord_ (speaker)
+- _Mike Holloway_ (speaker)
+- Joe Marsh Rossney
 - Cansu Uluseker
 - Ed Rowe
-- Joe Marsh Rossney
 :::
 :::{.column width="50%"}
-#### And others
+#### And others...
 
 - RSEs: Cambridge, Potsdam, Chile
-- Senior academics: Amsterdam, Plymouth, TUDelft
-- Postdocs / PhD students: Lancaster, Plymouth, Rome, York
-- Industry: Bristol
+- Academia: Amsterdam, Plymouth, TUDelft, UMass Dartmouth, Lancaster (incl. Qianhui Lin), Rome, York
+- Research Centre / Government: UKCEH, PML, NOAA
+- Industry: Fathom (Bristol), Deltares (NL & US)
  
 :::
 
 ::::
 
-## {background-image="images/rydal_hall_2024.jpg"}
+Aimed to answer the question:
+
+> **_"What should the next generation of environmental models look like?"_**
+
+:::{.notes}
+Also Qianhui Lin, Faiza and Sam's PhD student
+:::
+
+
+## {background-image="images/group.png"}
 
 
 ## What's a CSDMS?
 
-- _"a diverse community of experts promoting the modeling of earth surface processes by developing, supporting, and disseminating integrated software modules..."_^[https://csdms.colorado.edu/wiki/About_CSDMS]
+![](images/CSDMS-logo-flat.png){.absolute bottom=0 right=0 width=30%}
 
-- Based out of Colorado: https://csdms.colorado.edu/
-- Maintain a curated [repository of compliant community models](https://csdms.colorado.edu/wiki/Model_download_portal)
+CSDMS = **Community Surface Dynamics Modelling System**, based out of [Univ. Colorado Boulder](https://csdms.colorado.edu)
 
-:::{.callout-note}
-### CSDMS = Community Surface Dynamics Modelling System
-:::
+> _"a diverse community of experts promoting the modeling of earth surface processes by developing, supporting, and disseminating integrated software modules..."_^[https://csdms.colorado.edu/wiki/About_CSDMS]
 
 
-## The CSDMS Workbench
+They maintain a curated [repository of compliant community models](https://csdms.colorado.edu/wiki/Model_download_portal).
 
-The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is designed to facilitate ... by
+The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is an integrated system of tools and standards for modelling:
 
-1. Interoperability of models via the [Basic Model Interface](https://csdms.colorado.edu/wiki/BMI) (BMI)
-2. [Variable naming standards](https://csdms.colorado.edu/wiki/CSDMS_Standard_Names)
-3. Language agnosticism via a [Python wrapper](https://github.com/csdms/babelizer) (Fortran, C, C++, ~Java, ~Julia)
-4. Various tools for coupling model components exposing a BMI, setting up gridded experiments, and incorporating data
+- Interoperability of models via the [Basic Model Interface](https://csdms.colorado.edu/wiki/BMI) (BMI) and common [variable naming standards](https://csdms.colorado.edu/wiki/CSDMS_Standard_Names)
+- Language agnosticism via a [Python wrapper](https://github.com/csdms/babelizer) (Fortran, C, C++, ~Java, ~Julia)
+- Various tools for coupling model components exposing a BMI, setting up gridded experiments, and incorporating data
 
 :::{.notes}
 - Aim: build models from interoperable components
@@ -112,13 +103,41 @@ The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is designed to 
 - NextGen: next generation [National Water Model](https://water.noaa.gov/about/nwm) - NOAA (uses BMI)
 
 
-# Joe's Highlights / Takeaways
+# Joe's highlights
 
 ## A toybox of models
 
+- A small group of us (including Ed Rowe and myself) discussed training and knowledge-sharing across domains in depth.
+
+- We proposed to populate a GitHub repository with a growing collection of **BMI-compliant toy models** of all shapes and sizes.
+
+- From a training perspective the common BMI framework is helpful for both novices and experienced modellers:
+
+  - It ought to **reduce the cognitive load** for learners new to modelling, since you can get started and run models without needing to know too many details or going through a complicated set up.
+
+  - It should also facilitate lateral learning since BMI serves as a map for exploring new models, potentially from other domains.
+
+- **Get in touch** if you'd be interested in contributing!
+
 ## Containerised, BMI-ified JULES
 
-# Mike's Highlights / Takeaways
+- I had an interesting conversation with an RSE from the Netherlands eScience Center who had **containerised an old and slow Matlab model and exposed a BMI interface** that could receive inputs and send outputs over HTTP.
+
+- Initial reaction: cute but **not generally a good idea for large-scale modelling** (communications will become a bottleneck very quickly).
+
+- But really this is only a problem for tightly-coupled models (think atmospheric dynamics). Meanwhile JULES is essentially a 1+1 dimensional model -- decoupled in 2/3 spatial domains.
+
+- A **containerised, BMI-ified JULES could be a convenient alternative** route to working with JULES, **using Python and generic computing resources** (i.e. without Jasmin)
+
+
+:::{.notes}
+- Naive parallelisation over lat-lon (which is essentially decoupled in JULES) is then very scalable, and there are no blocking communications (as with MPI/OpenMP)
+- Reminds me of Faiza, Sam and Qianhui's project on microservice architectures for modelling
+- CEH looking to do an inter-model comparison study: could this be useful? Or more generally the BMI approach.
+- I'm not planning to work on this with urgency, but would happily do it if the need should arise.
+:::
+
+# Mike's highlights
 
 ## Modular modelling systems
 
@@ -137,29 +156,34 @@ The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is designed to 
 - Picking on hydrologists here but why so many different models? Should there be more community collaboration?
 - Linking models requires making them easier to couple with other models - E.g. using the CSDMS BMI approach 
 
-# Carolynnes Highlights
+# Carolynnes highlights
 
 
 # Next steps
 
 ## Next steps
 
-- Set up _Euro_-CSDMS
-- Writing a kind of proceedings / workshop outcomes paper
-- Set up a community forum on Discourse (done! https://forum.csdms.io/)
-- Looking for funding for future events
-- Developing training tools (toybox)
-- _In situ_ hackathons + citizen science projects (solve the system)
+- [x] Set up a community forum on Discourse (done! https://forum.csdms.io/)
+- [ ] Writing a kind of proceedings / workshop outcomes paper (in progress)
+- [ ] Set up _Euro_-CSDMS
+- [ ] Developing training tools (including the toybox)
+- [ ] Looking for funding for future events
+- [ ] _In situ_ hackathons + citizen science projects (solve the system)
 
-# Thanks for listening! { .no-logo .no-footer .closing-slide .center background-image="images/PP_wave-02.png"}
+
+## Get involved
+
+#### Join the Discourse forum! {.center}
+
+**[forum.csdms.io](https://forum.csdms.io/)**
+
+#### Further reading
+
+- Workshop website (for images): [eurocsdmswork.shop/](https://eurocsdmswork.shop/)
+- Sam's blog post: [www.ceh.ac.uk/news-and-media/blogs/envisioning-future-environmental-modelling](https://www.ceh.ac.uk/news-and-media/blogs/envisioning-future-environmental-modelling)
+
+# Thanks for listening! { .no-logo .no-footer .closing-slide .center background-image="images/closing.png"}
 
 **Any questions?**
 
-:::{.callout-important}
-### Join the Discourse forum!
-https://forum.csdms.io/
-:::
 
-## More information...
-
-- Sam's blog post: https://www.ceh.ac.uk/news-and-media/blogs/envisioning-future-environmental-modelling
