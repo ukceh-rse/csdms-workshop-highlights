@@ -7,7 +7,6 @@ date-format: long
 format:
   revealjs:
     theme: [default, ukceh.scss]
-    logo: images/logo.png
     footer: <a href="https://www.ceh.ac.uk">www.ceh.ac.uk</a>
     smaller: true
     slide-number: c/t
