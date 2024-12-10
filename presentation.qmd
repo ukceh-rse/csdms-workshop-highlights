@@ -1,6 +1,6 @@
 ---
 title: Euro-CSDMS Workshop on Next-generation Modelling
-subtitle: Summary, Highlights and Takeaways
+subtitle: Highlights and Takeaways
 date: 2024-12-11
 date-format: long
 
@@ -20,8 +20,8 @@ format:
       <script src="ukceh.js" type="application/javascript"></script>
 
 authors:
-  - Joe Marsh Rossney
-  - Mike Hollaway
+  - Joe Marsh Rossney,
+  - Mike Hollaway,
   - Carolynne Lord
 
 ---
@@ -97,11 +97,15 @@ The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is an integrate
 
 ## Extensions and Alternatives
 
-- [eWatercycle](https://www.ewatercycle.org/) - [Netherlands eScience Centre](https://www.esciencecenter.nl/) (uses BMI)
+- [eWatercycle](https://www.ewatercycle.org/) by the Netherlands eScience Centre (uses BMI)
   - We ran [this demo notebook](https://www.ewatercycle.org/eurocsdms_workshop/main/intro.html) on Datalabs
-- The Framework for Aquatic Biogeochemical Models (FABM) - PML
-- NextGen: next generation [National Water Model](https://water.noaa.gov/about/nwm) - NOAA (uses BMI)
+- The [Framework for Aquatic Biogeochemical Models](https://github.com/fabm-model/fabm) (FABM) by Plymouth Marine Laboratory
+- 'NextGen': a next generation [National Water Model](https://water.noaa.gov/about/nwm) by NOAA (uses BMI)
 
+:::{.notes}
+Observation: Slightly confusing how 90% of the presentations were oriented around BMI but there were a couple that were not.
+Would have been good to have had more chance to introduce the differences, strengths, weaknesses etc to newbies (me).
+:::
 
 # Joe's highlights
 
@@ -158,6 +162,35 @@ The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is an integrate
 
 # Carolynnes highlights
 
+## Highlights
+
+
+#### Presentations & workshops
+
+- Kirsty Pringle's Green Computing presentation
+
+- Michael Hollaway's DataLabs workshops
+
+#### Coffee conversations
+
+- Cohesiveness of conceptualisations around 'the model'. What are they? Is the community even talking about comparable entities?
+- How do other stakeholders (e.g. policymakers) perceive models? As facts or representations? How do we communicate what a model is?
+- The role of assumptions and uncertainties in modelling. How do we document these? How to communicate these to policymakers and other researchers using and developing the model?
+- How do we model society? What even is society? What assumptions would be involved?
+
+## Personal Takeaway's and Actions
+
+#### Takeaway's
+
+- A better understanding of the challenges and opportunities in modelling
+- Challenged the concept of DRI: could modelling be a case study?
+- Refocused interest in science and a social practice, the role of technology in this, as well as the role of science in policymaking
+
+#### Actions
+
+- Contribute to workshop paper on 'Modelling and Society'
+- Read the many papers recommended to me
+- Continue my involvement in this community so I can learn more from them
 
 # Next steps
 
@@ -173,17 +206,17 @@ The [CSDMS Workbench](https://csdms.colorado.edu/wiki/Workbench) is an integrate
 
 ## Get involved
 
-#### Join the Discourse forum! {.center}
+#### Join the Discourse forum!
 
 **[forum.csdms.io](https://forum.csdms.io/)**
 
 #### Further reading
 
+- Many links available in this presentation at [ukceh-rse.github.io/csdms-workshop-highlights](https://ukceh-rse.github.io/csdms-workshop-highlights)
 - Workshop website (for images): [eurocsdmswork.shop/](https://eurocsdmswork.shop/)
 - Sam's blog post: [www.ceh.ac.uk/news-and-media/blogs/envisioning-future-environmental-modelling](https://www.ceh.ac.uk/news-and-media/blogs/envisioning-future-environmental-modelling)
 
 # Thanks for listening! { .no-logo .no-footer .closing-slide .center background-image="images/closing.png"}
 
 **Any questions?**
-
 
